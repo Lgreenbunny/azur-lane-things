@@ -52,7 +52,21 @@ public class mainTiming {
 		 * 
 		 * should check if it's a number or not and stop putting things into that one MiniTime
 		 * 
-		 * after adding all the queues 
+		 * after adding all the queues, 
+		 * see MiniTime's comments
+		 * put the MiniTimes in order based on lowest time
+		 * print out the lowest time'd MiniTime and update their next time value
+		 * 		based on their queue or their permanent current time interval
+		 * update that time either in main or inside the MiniTime's print method
+		 * 		(the one above that printed)
+		 * resort the queue
+		 * keep going until a limit's reached
+		 * 		(check morales or check the next MiniTime's value each time)
+		 * for something like a sortie for 3 fleets, possibly increment all
+		 * of the fleets's time by the same amount, THEN 
+		 * for the one that jsut went, add their individual time and resort the queue  
+		 * cause time's gonna pass while everyone waits for the sortie, and they aren't gonna
+		 * start to sortie in the middle of another fleet's sortie
 		 * */
 	}
 
