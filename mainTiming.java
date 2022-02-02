@@ -59,16 +59,19 @@ public class mainTiming {
 		 * 		based on their queue or their permanent current time interval
 		 * update that time either in main or inside the MiniTime's print method
 		 * 		(the one above that printed)
-		 * resort the queue
+		 * 
+		 * re-sort the queue
+		 * 
 		 * keep going until a limit's reached
 		 * 		(check morales or check the next MiniTime's value each time)
+		 * 
 		 * for something like a sortie for 3 fleets, possibly increment all
 		 * of the fleets's time by the same amount, THEN 
 		 * for the one that just went, add their individual time and resort the queue  
 		 * cause time's gonna pass while everyone waits for the sortie, and they aren't going to
 		 * start to sortie in the middle of another fleet's sortie
 		 * 
-		 * for morale, seems like it updates around every 6 min and adds 3/4/5 morale per ship, need 
+		 * for morale, seems like it updates around every 6 min and adds 3/4/5/6 morale per ship, need 
 		 * to test more tho
 		 * */
 	}

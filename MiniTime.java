@@ -2,8 +2,9 @@ package mainPack;
 
 
 public class MiniTime {
-	public int morale;
-	public double nextTime;
+	public int morale, max, min, nextTime, coolDown;
+	public boolean empty;
+	
 	public double[] firstTimes;
 	
 	
@@ -13,9 +14,11 @@ public class MiniTime {
 	 * 
 	 * methods:
 	 * method for:
-	 * 		managing the nextTime
-	 * 		managing the firstTimes queue
-	 * 		managing morale
+	 * 		set/get the nextTime
+	 * 		set the firstTimes queue
+	 * 		get firstTimes next number
+	 * 		set/get morale
+	 * 		getter for coolDown
 	 * 		overloaded method for nextTime management based on a different outside value
 	 * toString overridden method that prints morale + nextTime
 	 * 		(when the method is called, should call the firstTimes manager method or
