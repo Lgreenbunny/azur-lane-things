@@ -1,30 +1,31 @@
 package mainPack;
-
+	/*
+	 * holds the firstTimes queue (first cooldowns before a constant cooldown at the end)
+	 * nextTime double (the default cooldown or an absolute cooldown of another MiniTime)
+	 * coolDown (default cooldown)
+	 * name of the weapon/ship/skill/etc
+	 * type of weapon for MiniTimeManager (plane, missile/salvo, dd/cl/ca/cb gun...)
+	 * methods:
+	 * addTime() adds to the nextTime
+	 * toString() overrides and sends the text that's 
+	 * 	written as the code output
+	 * updateNextTime() to change nextTime based onn firstTimes/coolDown
+	 * getNextTime() returns the nextTime
+	 */
 
 public class MiniTime {
-	public int morale, max, min, nextTime, coolDown;
-	public boolean empty;
+	private double nextTime, coolDown, absCoolDown;
+	private boolean empty;
+	private String name, type;
 	
-	public double[] firstTimes;
+	private double[] firstTimes;
 	
-	
-	/*
-	 * have a current time to add/subtract, a stack for differently-timed timers
-	 *
-	 * 
-	 * methods:
-	 * method for:
-	 * 		set/get the nextTime
-	 * 		set the firstTimes queue
-	 * 		get firstTimes next number
-	 * 		set/get morale
-	 * 		getter for coolDown
-	 * 		overloaded method for nextTime management based on a different outside value
-	 * toString overridden method that prints morale + nextTime
-	 * 		(when the method is called, should call the firstTimes manager method or
-	 * 		the nextTime manager
-	 * 
-	 * */
-	
+	MiniTime(){//should take all of the above variables except for empty 
 
+	}
+	private boolean emptyUpdate(double[] arr){
+		if (arr.length == 0) //if empty, return true
+			return true;
+		return false; //otherwise return false
+	}
 }
